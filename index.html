@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio Web - Mauro Allena</title>
+    <link rel="favicon" href="assets/pc-2.jpg">
+    <link rel="icon" href="/assets/ico-ar-prog-Mauro.ico" type="image/x-icon">
     <meta name="description" content="Hola bienvenid@ a mi Portafolio Profesional, soy Mauro Allena, desarrollador Web">
 </head>
 <body>
-    <header class="header">
+    <header class="header p-1 w-100">
         <section class="container">
             <div class="logo">
                 <div >   
@@ -21,25 +24,19 @@
                 </div>
             </div>
             
-            <button class="menu-btn is-active">
-                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M4 6H20V8H4zM4 11H20V13H4zM4 16H20V18H4z"/>
-                </svg>
-                <svg class="none" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.192 6.344L11.949 10.586 7.707 6.344 6.293 7.758 10.535 12 6.293 16.242 7.707 17.656 11.949 13.414 16.192 17.656 17.606 16.242 13.364 12 17.606 7.758z"/>
-                </svg>
-            </button>
             <nav class="menu">
-                <a href="#"><img src="/assets/facebook.png" alt="enlace facebook"></a>
-                <a href="#"><img src="/assets/github.png" alt="enlace facebook"></a>
-                <a href="#"><img src="/assets/linkedin.png" alt="enlace facebook"></a>
-                <a href="#"><img src="/assets/instagram.png" alt="enlace facebook"></a>
-                <a href="#"><img src="/assets/twitter.png" alt="enlace facebook"></a>
+                <a href="https://www.facebook.com/mauro.allena" target="_blank"><img src="/assets/facebook.png" alt="enlace facebook"></a>
+                <a href="https://github.com/mauea22" target="_blank"><img src="/assets/github.png" alt="enlace github"></a>
+                <a href="https://www.linkedin.com/in/mauro-allena-b15b82213/" target="_blank"><img src="/assets/linkedin.png" alt="enlace linkedin"></a>
+                <a href="https://www.instagram.com/mauea22/" target="_blank"><img src="/assets/instagram.png" alt="enlace instagram"></a>
+                <a href="https://twitter.com/MAUROALLENA22" target="_blank"><img src="/assets/twitter.png" alt="enlace twitter"></a>
                 <button type="button" class="btn btn-login" accesskey="l">
                     Login
-                </button>
+                </button>                   
             </nav>
         </section>
     </header>
-    <section id="inicio" class="home">
+    <section id="inicio">
         <article class="hero-image" style="--hero-image:url(/assets/pc-2.jpg); --hero-attachment:fixed;">
             <aside class="hero-image-opacity" style="--hero-opacity-color:var(--black-alpha-color);">
                 <div class="hero-image-content">
@@ -51,5 +48,65 @@
             </aside>
         </article>
     </section>
+    <section class="about section container full-lg-screen">
+        <article class="text-lg-right">
+            <aside class="text-center text-lg-right">
+                <h1>Mauro Allena</h1>
+                <h6>Programador <i>Web</i></h6>
+            </aside>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque provident id error ut aliquid deserunt reprehenderit, omnis praesentium laudantium iusto unde saepe, reiciendis, delectus iste. Nihil neque aperiam corporis ratione!
+            </p>
+
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur quibusdam quisquam iusto qui, vitae velit et corrupti sed officia debitis ducimus excepturi perspiciatis at architecto similique sapiente temporibus? Recusandae, quam!
+            Blanditiis et officia numquam porro earum quae eveniet, deleniti sequi quos eos quod, quibusdam obcaecati perferendis eligendi sunt unde nulla pariatur. Commodi nesciunt repudiandae est eum temporibus! Temporibus, quia itaque?
+            </p>
+                
+            <div class="text-center text-lg-left">
+                <a class="btn" href="../portafolio-mauroallena/CCV Mauro Allena 2021.docx" target="_blank" rel="noopener" download="cv-Allena Mauro">DESCARGA MI CV</a>
+            </div>
+        </article>
+        <article>
+            <img class="gray-scale" src="/assets/foto MA.jpg" alt="Mauro Allena">
+        </article>
+        <article>
+            <h2 class="text-center text-lg-left">Mis Habilidades</h2>
+            <div class="progress">
+                <p>
+                    <b>Desarrollo <i>Web Frontend</i></b>
+                    <b>90%</b>
+                </p>
+                <progress value="90" min="0" max="100"></progress>
+            </div>
+            <div class="progress">
+                <p>
+                    <b>Diseño <i>Web</i></b>
+                    <b>85%</b>
+                </p>
+                <progress value="85" min="0" max="100"></progress>
+            </div>
+            <div class="progress">
+                <p>
+                    <b> <i>WPO</i> <i>SEO</i></b>
+                    <b>80%</b>
+                </p>
+                <progress value="80" min="0" max="100"></progress>
+            </div>
+            <div class="progress">
+                <p>
+                    <b>Desarrollo<i>Web Backend</i></b>
+                    <b>85%</b>
+                </p>
+                <progress value="85" min="0" max="100"></progress>
+            </div>
+            <div class="progress">
+                <p>
+                    <b> <i>Social Media</i></b>
+                    <b>70%</b>
+                </p>
+                <progress value="70" min="0" max="100"></progress>
+            </div>
+        </article>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="/js/script.js"></script>
 </body>

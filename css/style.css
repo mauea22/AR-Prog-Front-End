@@ -102,11 +102,6 @@ p{
 }
 
 
-.hero-image-content{  /*para que el texto de la seccion testimonios se ajuste en mobil*/
-    width: 100%;
-    
-}
-
 .hero-image-opacity{
     width: 100%;
     min-height: 100vh;
@@ -198,7 +193,7 @@ a img{
     border-radius: .5rem;
     padding: 1rem;
     display: inline-block;
-    width: 200px;
+    width: auto;
     text-align: center;
     font-weight: bold;
     text-decoration: none;
@@ -218,10 +213,9 @@ a img{
     left: 0;
     bottom: 0;
     z-index: 999;
-    padding: 1rem;
-    width: 100%;
     background-color: var(--second-color);
 }
+
 .header > .container{
     display: flex;
     justify-content: space-between;
@@ -254,64 +248,8 @@ a img{
 }
 
 
-@media screen and (min-width:768px){
-    .contact-cards{
-        display: grid;
-        grid-template-columns: repeat(2, 48%);
-        justify-content: space-between;
-    }
-
-    .footer{
-        margin-bottom: 0;
-    }
-
-    .portfolio > .container{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-    }
-
-    .portfolio .section-title{
-        grid-column: span 2;
-    }
-
-    .portfolio-modal{
-        max-width: 800px;
-        flex-direction: row;
-    }
-
-    .portfolio-info{
-        margin-left: 1rem;
-        align-self: center;
-    }
-
-    .services > .container{
-        display: grid;
-        grid-template-columns: repeat(2, 45%);
-        justify-content: space-between;
-        align-content: center;
-    }
-
-    .services .section-title{
-        grid-column: span 2;
-    }
-}
 
 @media screen and (min-width:1024px){
-    .about{
-        display: grid;
-        grid-template-columns: repeat(3,30%);
-        justify-content: space-between;
-        align-content: center;
-    }
-
-    .contact-cards{
-        grid-template-columns: repeat(4, 24%);
-    }
-
-    .footer{
-        margin-bottom: 0;
-    }
-
     .header{
         position: sticky; /*posicionar el header arriba sin tapar el contenido*/
         top: 0;
@@ -319,19 +257,19 @@ a img{
         height: calc(var(--header-height)- .5rem);
     }
 
-    .portfolio > .container{
-        grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width:1024px){
+    .header > .container{
+        
+        justify-content: center;
+        
     }
 
-    .portfolio .section-title{
-        grid-column: span 3;
-    }
-
-    .services > .container{
-        grid-template-columns: repeat(3, 30%);
-    }
-
-    .services .section-title{
-        grid-column: span 3;
+    .btn{
+        padding: 0.8rem;
+        width: auto;
+        margin-top: 1rem;
+        font-size: auto;
     }
 }
